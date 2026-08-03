@@ -74,7 +74,7 @@ btnPlayEl.addEventListener(`click`,()=>{
     hideNumEl.style.width = "25%";
     hideNumEl.style.transition = "all 0.5s ease-in";
     inputNumEl.value = ""
-    containerEl.style.backgroundColor = "purple";
+    containerEl.style.backgroundColor = "pink";
     displayMessage("try again HeGoat.....")
 })
 
