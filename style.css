@@ -103,3 +103,95 @@ body {
     font-size: 1.2rem;
     font-family: "lora" serif;
 }
+
+
+.mobile {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 860px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        border: solid black;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .mobile-container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        flex-direction: column;
+        border: solid black;
+        padding-top: 50px;
+        width: calc(80% - 5px);
+        background-color: violet;
+        box-shadow: 1px 0px 18px 11px blue;
+
+    }
+
+    .mobile-container-wrapper {
+        display: flex;
+        gap: 20px;
+    }
+
+    .mobile-hide-num {
+        text-align: center;
+        font-size: 3rem;
+        background-color: blueviolet;
+        border-radius: 8px;
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    .mobile-btn-again {
+        background-color: purple;
+        border: none;
+        height: 30px;
+        width: 80px;
+        border-radius: 8px;
+    }
+
+    .mobile-btn-again:hover {
+        transform: scale(1.1);
+    }
+
+    .mobile-number-data {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 20px;
+    }
+
+
+    .mobile-btn-again3 {
+        background-color: yellowgreen;
+        height: 30px;
+        width: 80px;
+        margin-top: 8PX;
+        border: none;
+        border-radius: 8PX;
+    }
+
+    .mobile-btn-again3:hover {
+        transform: scale(1.1);
+    }
+
+
+
+    .mobile-input-number {
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        font-size: 1.3rem;
+        border: 1px solid black;
+    }
+}
