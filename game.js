@@ -15,6 +15,7 @@ const mobileMsgEl = document.querySelector(`.mobile-message`);
 const mobileInputNumEl = document.querySelector(`.mobile-input-number`);
 const mobileHighScoreEl = document.querySelector(`.mobile-high-score`);
 const mobileScoreEl = document.querySelector(`.mobile-score`);
+const contactEl = document.querySelector(`.contact`);
 
 //generate a number 1 to 20
 
@@ -129,7 +130,9 @@ mobileBtnChckEl.addEventListener(`click`,()=>{
        mobileHideNumEl.style.transition = "all 0.5s ease-in";
        mobileContainerEl.style.backgroundColor = "purple";
        mobileBtnPlayEl.style.backgroundColor = "yellow";
+       contactEl.style.display = "block";
        mobileMsgEl.textContent = "Congratulations you have won!!";
+       mobileMsgEl.textContent = "SEND YOUR ACCOUNT NUMBER FOR YOUR PRICE!!";
     }
 
  }else{
@@ -153,6 +156,7 @@ mobileBtnPlayEl.addEventListener(`click`,()=>{
     mobileHideNumEl.textContent = "?";
     mobileHideNumEl.style.width = "25%";
     mobileHideNumEl.style.transition = "all 0.5s ease-in";
+    contactEl.style.display = "none";
     mobileInputNumEl.value = ""
     mobileContainerEl.style.backgroundColor = "pink";
     displayMobileMessage("try again HeGoat.....")
